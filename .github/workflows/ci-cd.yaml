@@ -6,7 +6,8 @@ on:
   pull_request:
     types: [ opened, edited, reopened, synchronize, review_requested ]
     branches: [ '*' ]
-  workflow_call:
+  workflow_dispatch:
+    branches: [main]
 
 env:
   TEMPLATE_ROOT: ./content/Dwt
